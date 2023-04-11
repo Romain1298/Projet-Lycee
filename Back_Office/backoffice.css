@@ -22,6 +22,13 @@ body{
     background-color: white;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-modal-delete{
+    height: 90%;
 }
 
 #titre-modal-delete{
