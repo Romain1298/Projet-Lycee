@@ -37,6 +37,8 @@ if (isset($_POST['delete']))
             <h1 id="titre-modal-delete">Etes vous sur de vouloir supprimer cette ligne ?</h1>
             <div id="button-oui-non">
                 <form action="#" method="POST">
+                    <input type="hidden" name="delete[nom]" value="<?php echo $liste["nom_message"] ?>">
+                    <input type="hidden" name="delete[id]" value="<?php echo $liste["id_message"] ?>">
                     <button id="button-oui" onclick="">Oui</button>
                 </form>
                 <form action="#" method="POST">
@@ -76,11 +78,7 @@ if (isset($_POST['delete']))
                 <td style="width: 25%"><?php echo $liste['adresse_mail_message'] ?></td>
                 <td><?php echo $liste['contenu_message'] ?></td>
                 <td>
-                    <form method="POST" action="#">
-                        <input type="hidden" name="delete[nom]" value="<?php echo $liste["nom_message"] ?>">
-                        <input type="hidden" name="delete[id]" value="<?php echo $liste["id_message"] ?>">
-                        <button id="delete" onclick="" >SUPPRIMER</button>
-                    </form>
+                    <button id="delete" onclick="modal()" >SUPPRIMER</button>
                 </td>
             </tr>
             <?php } ?>
