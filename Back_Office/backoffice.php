@@ -88,10 +88,10 @@ if (isset($_POST['delete']))
     </table>
 
     <script>
-        let m;
-        let modal = document.getElementById("content-modal");
-
-        
+        function modal(){
+            var div = document.getElementById("content-modal")
+            div.style.display = "flex";
+        }
     </script>
 
 </body>
