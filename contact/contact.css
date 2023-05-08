@@ -12,14 +12,14 @@ header{
 }
 
 #font-logo{
-    width: 17%;
+    width: 244px;
     position: absolute;
     z-index: 2;
     margin-left: 9%;
 }
 
-#container-logo{
-    width: 90%;
+.container-logo{
+    width: 244px;
     height: 111px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ header{
 }
 
 .img-lsv{
-    width: 100%;
+    width: 80%;
 }
 
 .chevron-droit{
@@ -97,6 +97,11 @@ header{
     font-size: 14px;
 }
 
+.content-chevron-droit{
+    display: flex;
+    justify-content: center;
+}
+
 #info-tel{
     display: flex;
     align-items: center;
@@ -161,8 +166,9 @@ header{
 }
 
 .content-img-partenaire{
-    width: 180px;
-    height: 180px;
+    width: 80%;
+    height: 80%;
+    transition: all 1s ease-in-out;
 }
 
 .rectangle-img{
@@ -270,12 +276,12 @@ footer{
 }
 
 #content-footer{
-    width: 85%;
+    width: 90%;
     display: flex;
 }
 
-#footer-logo{
-    background-color: #FFFFFF;
+#content-footer-img{
+    width: 244px;
 }
 
 #titre-cse-raccourcis{
@@ -301,7 +307,8 @@ footer{
 }
 
 #raccourcis{
-
+    height: 35%;
+    display: flex;
 }
 
 #raccourcis a{
@@ -334,6 +341,11 @@ footer{
 .chevron-blanc-raccourcis{
     display: flex;
     align-items: center;
+    margin-right: 30px;
+}
+
+.chevron-blanc-raccourcis:last-child{
+    margin: 0;
 }
 
 /*---------------------------------------------------------Contact---------------------------------------------------------*/
@@ -342,9 +354,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 #formulaire{
+    height: 100%;
     display: grid;
 }
 
@@ -361,6 +375,7 @@ h1{
 }
 
 #contact{
+    height: 100%;
     display: grid;
     justify-content: center;
 }
@@ -399,7 +414,7 @@ h1{
 }
 
 #item-message{
-    height: 150px;
+    height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
@@ -409,6 +424,7 @@ h1{
 
 #input-message{
     width: 550px;
+    max-width: 550px;
     height: 80%;
     border-radius: 5px;
     padding: 5px;
@@ -432,16 +448,25 @@ h1{
 
 @media(max-width: 1400px){
     #container-formulaire{
-        
+        margin-left: 30%;
     }
 }
 
 @media(max-width: 1100px){
     #container-formulaire{
-        
+        margin-left: 35%;
     }
 }
 
+@media(max-width: 910px) {
+    .input{
+        width: 400px;
+    }
+
+    #input-message{
+        width: 400px;
+    }
+}
 
 @media(max-width:840px){
     nav{
@@ -465,10 +490,9 @@ h1{
     }
 
     .trait{
-        border: 2px solid red;
         margin: 5px;
         padding-right: 50px;
-        background-color: red;
+        background-color: #EFEDED;
         border-radius: 5px;
     }
 }

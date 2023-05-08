@@ -46,30 +46,30 @@ $erreur = [];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
-    <title>LSV Projet</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
         <div id="font-logo">
-            <div id="container-logo">
+            <div class="container-logo">
                 <img class="img-lsv" src="../images/LSV.png" alt="Lycée St-Vincent">
             </div>
             <div id="container-info">
                 <div id="info-accueil">
                     <img id="home" src="../images/homeIcon.png" alt="home">
                     <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
-                    <p>Accueil</p>
+                    <p>Contact</p>
                 </div>
                 <div id="info-acces-rapide">
                     <p id="acces-rapide">Accès rapide</p>
                     <div id="info-offre-billeterie-contacter">
                         <div id="info-offre-billeterie">
                             <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
-                            <p>Offres / Billeterie</p>
+                            <p>Accueil</p>
                         </div>
                         <div id="info-contacter">
                             <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
-                            <p>Nous contacter</p>
+                            <p>Offres / Billeterie</p>
                         </div>
                     </div>
                 </div>
@@ -77,15 +77,21 @@ $erreur = [];
                     <p id="information-contact">Informations de contact</p>
                     <div id="info-tel-email-lieu">
                         <div id="info-tel">
-                            <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            <div class="content-chevron-droit">
+                                <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            </div>
                             <p>Par téléphone : <a id="tel" href="#">+33303030303</a></p>
                         </div>
                         <div id="info-email">
-                            <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            <div class="content-chevron-droit">
+                                <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            </div>
                             <p>Par email : <a id="email" href="#">cse@lyceestvincent.fr</a></p>
                         </div>
                         <div id="info-lieu">
-                            <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            <div class="content-chevron-droit">
+                                <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
+                            </div>
                             <p>Au lycée : <a id="lieu" href="#">Bureau du CSE (1er étage bâtiment Saint-Vincent)</a></p>
                         </div>
                     </div>
@@ -129,10 +135,10 @@ $erreur = [];
                 <span class="trait"></span>
             </div>
             <nav>
-                <li id="accueil"><a href="#">Accueil</a></li>
-                <li id="partenariats"><a href="#">Partenariats</a></li>
-                <li id="billeterie"><a href="#">Billeterie</a></li>
-                <li id="li-contact"><a href="#">Contact</a></li>
+                <li id="accueil"><a href="../accueil/accueil.php">Accueil</a></li>
+                <li id="partenariats"><a href="../partenariats/partenariats.php">Partenariats</a></li>
+                <li id="billeterie"><a href="../billeterie/billeterie.php">Billeterie</a></li>
+                <li id="li-contact"><a href="../contact/contact.php">Contact</a></li>
             </nav>
         </div>
     </header>
@@ -216,25 +222,28 @@ $erreur = [];
                 <div class="item-contact">
                     <input id="submit" type="submit">
                     <?php
-                    if(empty($erreur))
-                    {
-                        try{
-                            $sth = $con -> prepare("INSERT INTO message (nom_message, prenom_message, adresse_mail_message, contenu_message) 
-                                VALUES (:nom_message, :prenom_message, :adresse_mail_message, :contenu_message)");
-                            $sth->bindParam(':nom_message', $_POST['nom']);
-                            $sth->bindParam(':prenom_message', $_POST['prenom']);
-                            $sth->bindParam(':adresse_mail_message', $_POST['email']);
-                            $sth->bindParam(':contenu_message', $_POST['message']);
-                    
-                            $sth->execute();
-                    
-                            echo 'Votre demande a bien été prise en compte';
-                        }
-                        catch (PDOException $exception)
+                        if(empty($_POST) === false)
                         {
-                            echo 'erreur';
+                            if(empty($erreur))
+                            {
+                                try{
+                                    $sth = $con -> prepare("INSERT INTO message (nom_message, prenom_message, adresse_mail_message, contenu_message) 
+                                        VALUES (:nom_message, :prenom_message, :adresse_mail_message, :contenu_message)");
+                                    $sth->bindParam(':nom_message', $_POST['nom']);
+                                    $sth->bindParam(':prenom_message', $_POST['prenom']);
+                                    $sth->bindParam(':adresse_mail_message', $_POST['email']);
+                                    $sth->bindParam(':contenu_message', $_POST['message']);
+                            
+                                    $sth->execute();
+                            
+                                    echo 'Votre demande a bien été prise en compte';
+                                }
+                                catch (PDOException $exception)
+                                {
+                                    echo 'erreur';
+                                }
+                            }
                         }
-                    }
                     ?>
                 </div>
             </form>
@@ -243,8 +252,10 @@ $erreur = [];
 
         <footer>
             <div id="content-footer">
-                <div id="footer-logo">
-                    <img class="img-lsv" src="../images/LSV.png" alt="Lycée St-Vincent">
+                <div id="content-footer-img">
+                    <div class="container-logo">
+                        <img class="img-lsv" src="../images/LSV.png" alt="Lycée St-Vincent">
+                    </div>
                 </div>
                 <div id="titre-cse-raccourcis">
                     <div id="titre-cse">
@@ -257,7 +268,7 @@ $erreur = [];
                                 <span class="trait-blanc-incline-30deg"></span>
                             </div>
                             <div id="raccourcis-partenariats">
-                                <p><a href="#">Accueil</a></p>
+                                <p><a href="../accueil/accueil.php">Accueil</a></p>
                             </div>
                         </div>
                         <div class="chevron-blanc-raccourcis">
@@ -282,8 +293,6 @@ $erreur = [];
                 </div>
             </div>
         </footer>
-        <script src="../carousel.js"></script>
+        <script src="../script.js"></script>
 </body>
 </html>
-
-probleme responsive dans id "container-info"
