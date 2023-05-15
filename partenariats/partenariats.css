@@ -1,0 +1,87 @@
+.page_partenaire{
+    border: solid;
+    width: 39%;
+    background-color: #EFEDED;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    justify-content: center;
+}
+
+.partenaire{
+    /* border: solid; */
+    align-items: center;
+    width: 88%;
+    height: 56%;
+    margin-top: 16%;
+    margin-left: 7px;
+    display: grid;
+}
+
+.nom_partenaire{
+    text-align: center;
+    border: solid;
+    border-radius: 7px;
+    background-color: #1B3168;
+}
+
+.nom_part{
+    margin: 5px;
+    color: #B6A886;
+}
+
+.image_partenaire{
+    text-align: center;
+}
+
+.image_partenaire img{
+    width: 133px;
+    height: 133px;
+    padding-bottom: 90px;
+}
+
+.texte_partenaire{
+    text-align: center;
+}
+
+.popup{
+    width: 400px;;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    /* border: solid; */
+}
+
+.popup h5{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: #B6A886;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #1B3168;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
