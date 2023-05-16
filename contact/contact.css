@@ -4,6 +4,42 @@
 
 body{
     margin: 0;
+    overflow-x: hidden;
+}
+
+#container-menu-deroulant{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: -60%;
+    z-index: 100;
+    transition: all 0.5s ease-out;
+    background: rgba(27, 49, 104, 0.8);
+}
+
+#menu-deroulant{
+    height: 100%;
+    width: 100%;
+    background: rgba(27, 49, 104, 0.3);
+}
+
+#container-button-hide{
+    display: flex;
+    justify-content: end;
+}
+
+#hide-menu-deroulant{
+    width: 10%;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hide-menu-deroulant img{
+    width: 100%;
 }
 
 header{
@@ -285,13 +321,8 @@ footer{
 }
 
 #titre-cse-raccourcis{
-    width: 40%;
     display: grid;
     margin-left: 4%;
-}
-
-#titre-cse{
-
 }
 
 #cse-lsv{
@@ -354,7 +385,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 10vh;
 }
 
 #formulaire{
@@ -445,6 +476,17 @@ h1{
 }
 
 /*---------------------------------------------------------Contact---------------------------------------------------------*/
+@media(min-height: 1200px){
+    #container-formulaire{
+        margin-bottom: 35vh;
+    }
+}
+
+@media(min-height: 1000px){
+    #container-formulaire{
+        margin-bottom: 30vh;
+    }
+}
 
 @media(max-width: 1400px){
     #container-formulaire{
@@ -459,6 +501,10 @@ h1{
 }
 
 @media(max-width: 910px) {
+    h1{
+        font-size: 40px;
+    }
+
     .input{
         width: 400px;
     }
@@ -482,10 +528,14 @@ h1{
         justify-content: end;
     }
 
+    li a{
+        color: black;
+    }
+
     #menu-hamburger{
         display: grid;
         justify-content: center;
-        width: 50%;
+        width: 100%;
         cursor: pointer;
     }
 
@@ -494,5 +544,68 @@ h1{
         padding-right: 50px;
         background-color: #EFEDED;
         border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #font-logo{
+        width: 200px;
+    }
+
+    #info-accueil p{
+        font-size: 15px;
+    }
+
+    #acces-rapide{
+        font-size: 15px;
+    }
+
+    #info-offre-billeterie-contacter p{
+        font-size: 10px;
+    }
+
+    #information-contact{
+        font-size: 15px;
+    }
+
+    #info-tel-email-lieu p{
+        font-size: 10px;
+    }
+
+    #nos-partenaires{
+        font-size: 15px;
+    }
+
+    .chevron-droit{
+        width: 10px;
+        height: 10px;
+    }
+
+    .container-logo{
+        width: 200px;
+    }
+
+    #rectangle{
+        height: 180px;
+    }
+
+    #all-partenaire p{
+        font-size: 12px;
+    }
+
+    #content-footer-img{
+        width: 220px;
+    }
+
+    #titre-cse-raccourcis{
+        margin-left: 0;
+    }
+
+    #cse-lsv{
+        font-size: 15px;
+    }
+    
+    #raccourcis p{
+        font-size: 10px;
     }
 }

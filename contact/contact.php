@@ -49,6 +49,19 @@ $erreur = [];
     <title>Contact</title>
 </head>
 <body>
+    <div id="container-menu-deroulant">
+        <div id="menu-deroulant">
+            <div id="container-button-hide">
+                <button id="hide-menu-deroulant" onclick="hideHamburger()"><img src="../images/croix.png" alt=""></button>
+            </div>
+            <ul>
+                <li><a href="../accueil/accueil.php">Accueil</a></li>
+                <li><a href="../partenariats/partenariats.php">Partenariats</a></li>
+                <li><a href="../billeterie/billeterie.php">Billeterie</a></li>
+                <li><a href="../contact/contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <header>
         <div id="font-logo">
             <div class="container-logo">
@@ -129,7 +142,7 @@ $erreur = [];
             </div>
         </div>
         <div id="font-bleu">
-            <div id="menu-hamburger">
+            <div id="menu-hamburger" onclick="showMenuHamburger()">
                 <span class="trait"></span>
                 <span class="trait"></span>
                 <span class="trait"></span>
@@ -277,7 +290,7 @@ $erreur = [];
                                 <span class="trait-blanc-incline-30deg"></span>
                             </div>
                             <div id="raccourcis-partenariats">
-                                <p><a href="#">Partenariats</a></p>
+                                <p><a href="../partenariats/partenariats.php">Partenariats</a></p>
                             </div>
                         </div>
                         <div class="chevron-blanc-raccourcis">
@@ -286,7 +299,7 @@ $erreur = [];
                                 <span class="trait-blanc-incline-30deg"></span>
                             </div>
                             <div id="raccourcis-billeterie">
-                                <p><a href="#">Billeterie</a></p>
+                                <p><a href="../billeterie/billeterie.php">Billeterie</a></p>
                             </div>
                         </div>
                     </div>
