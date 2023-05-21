@@ -189,6 +189,7 @@ header{
 }
 
 #content-img-rectangle{
+    height: 170px;
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -203,7 +204,6 @@ header{
 
 .content-img-partenaire{
     width: 80%;
-    height: 80%;
     transition: all 1s ease-in-out;
 }
 
@@ -549,7 +549,7 @@ h1{
 
 @media screen and (max-width: 700px) {
     #font-logo{
-        width: 200px;
+        width: 240px;
     }
 
     #info-accueil p{
@@ -586,7 +586,7 @@ h1{
     }
 
     #rectangle{
-        height: 180px;
+        height: 210px;
     }
 
     #all-partenaire p{
@@ -602,10 +602,56 @@ h1{
     }
 
     #cse-lsv{
-        font-size: 15px;
+        font-size: 20px;
     }
     
     #raccourcis p{
+        font-size: 15px;
+    }
+}
+
+@media screen  and (max-width: 670px) {
+    #container-formulaire{
+        margin-left: 0;
+        margin-top: 65vh;
+    }
+
+    #content-footer{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+
+    #content-footer-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .img-lsv {
+        width: 85%;
+    }
+
+    #titre-cse{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen  and (max-width: 360px) {
+    #raccourcis p{
         font-size: 10px;
+    }
+}
+
+@media screen  and (max-width: 270px) {
+    #raccourcis{
+        display: grid;
+    }
+
+    #raccourcis p{
+        font-size: 15px;
     }
 }
