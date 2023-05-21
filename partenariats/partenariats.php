@@ -1,5 +1,6 @@
 <?php
-require 'connexion_bdd.php';
+require('../include/connexion_bdd.php');
+
 if(empty($_GET['id_part'])===false){
     $requete = $con ->prepare("SELECT * FROM partenariats WHERE partenaire_id=:id");
     $requete->bindParam('id',$_GET['id_part']);
@@ -17,13 +18,14 @@ if(empty($_GET['id_part'])===false){
 }
 ?>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="partenariats.css">
-        <title>Partenaires</title>
-    </head>
-    <body>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="partenariats.css">
+    <title>Partenaires</title>
+</head>
+<body>
     <div id="container-menu-deroulant">
         <div id="menu-deroulant">
             <div id="container-button-hide">
@@ -46,7 +48,7 @@ if(empty($_GET['id_part'])===false){
                 <div id="info-accueil">
                     <img id="home" src="../images/homeIcon.png" alt="home">
                     <img class="chevron-droit" src="../images/chevron-droit.png" alt="chevron">
-                    <p>Contact</p>
+                    <p>Partenariats</p>
                 </div>
                 <div id="info-acces-rapide">
                     <p id="acces-rapide">Accès rapide</p>
@@ -145,14 +147,14 @@ if(empty($_GET['id_part'])===false){
                     <h5 class="nom_part"><?= $partenariats['partenaire_nom']?></h5>    
                 </div>
                 <div class="image_partenaire">
-                    <a href="?id_part=<?= $partenariats['partenaire_id']?>" class="btn"><img src="Leonidas.png"></a>
+                    <a href="?id_part=<?= $partenariats['partenaire_id']?>" class="btn"><img src="../images/Leonidas.png"></a>
                 </div>
             </div>
         <?php } ?>
         </section>
     </div>
 
-        <footer>
+    <footer>
         <div id="content-footer">
             <div id="content-footer-img">
                 <div class="container-logo">
@@ -179,7 +181,7 @@ if(empty($_GET['id_part'])===false){
                             <span class="trait-blanc-incline-30deg"></span>
                         </div>
                         <div id="raccourcis-partenariats">
-                            <p><a href="../partenariats/partenariats.php">Partenariats</a></p>
+                            <p><a href="../billeterie/billeterie.php">Billeterie</a></p>
                         </div>
                     </div>
                     <div class="chevron-blanc-raccourcis">
@@ -188,7 +190,7 @@ if(empty($_GET['id_part'])===false){
                             <span class="trait-blanc-incline-30deg"></span>
                         </div>
                         <div id="raccourcis-billeterie">
-                            <p><a href="../billeterie/billeterie.php">Billeterie</a></p>
+                            <p><a href="../contact/contact.php">Contact</a></p>
                         </div>
                     </div>
                 </div>
@@ -196,17 +198,17 @@ if(empty($_GET['id_part'])===false){
         </div>
     </footer>
     <script src="../script.js"></script>
-    </body>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
 </html>
 
-<script>
-    let popup = document.getElementById("popup");
-
-    function openPopup(){
-        popup.classList.add("open-popup");
-    }
-
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    }
-</script>
