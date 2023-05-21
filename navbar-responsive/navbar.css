@@ -7,11 +7,16 @@ body{
     overflow-x: hidden;
 }
 
+#content-body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 #container-menu-deroulant{
     height: 100%;
     width: 40%;
     position: absolute;
-    display: none;
+    display: flex;
     align-items: center;
     top: 0;
     right: -60%;
@@ -432,7 +437,7 @@ footer{
 
 @media screen and (max-width: 700px) {
     #font-logo{
-        width: 200px;
+        width: 240px;
     }
 
     #info-accueil p{
@@ -469,7 +474,7 @@ footer{
     }
 
     #rectangle{
-        height: 180px;
+        height: 210px;
     }
 
     #all-partenaire p{
@@ -485,32 +490,51 @@ footer{
     }
 
     #cse-lsv{
-        font-size: 15px;
+        font-size: 20px;
     }
     
     #raccourcis p{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
-@media screen  and (max-width: 550px) {
+@media screen  and (max-width: 670px) {
     #content-footer{
         width: 100%;
         display: grid;
         justify-content: center;
     }
 
-    #content-footer-img, .container-logo{
+    #content-footer-img{
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .img-lsv {
+        width: 85%;
     }
 
     #titre-cse{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen  and (max-width: 360px) {
+    #raccourcis p{
+        font-size: 10px;
+    }
+}
+
+@media screen  and (max-width: 270px) {
+    #raccourcis{
+        display: grid;
     }
 
-    #raccourcis{
-        height: 100%;
+    #raccourcis p{
+        font-size: 15px;
     }
 }
