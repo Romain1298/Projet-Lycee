@@ -115,7 +115,7 @@ CREATE TABLE `offre` (
 --
 
 CREATE TABLE `partenariats` (
-  `partenarie_id` int(11) NOT NULL,
+  `partenaire_id` int(11) NOT NULL,
   `partenaire_nom` varchar(250) NOT NULL,
   `description_partenaire` varchar(250) NOT NULL,
   `lien_site_partenaire` varchar(255) NOT NULL
