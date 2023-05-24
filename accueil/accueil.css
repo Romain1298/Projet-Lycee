@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;900&display=swap%27');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;600;700;800;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* GLOBAL */
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#content-body{
+  width: 100%;
+}
+
+#container-menu-deroulant{
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: -60%;
+  z-index: 100;
+  transition: all 0.5s ease-out;
+  background: rgba(27, 49, 104, 0.8);
+}
+
+#menu-deroulant{
+  height: 100%;
+  width: 100%;
+  background: rgba(27, 49, 104, 0.8);
+  box-shadow: -5px 0px 10px 15px rgb(27 49 104 / 80%);
+}
+
+#container-button-hide{
+  display: flex;
+  justify-content: end;
+}
+
+#hide-menu-deroulant{
+  width: 60px;
+  height: 50px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hide-menu-deroulant img{
+  width: 35px;
+}
+
+#nav-hamburger{
+  width: 100%;
+  height: 65%;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  height: 111px;
+  background-color: #EFEDED;
+}
+
+#font-logo{
+  width: 244px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 9%;
+}
+
+.container-logo{
+  width: 244px;
+  height: 111px;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  align-items: center;
+}
+
+.img-lsv{
+  width: 80%;
+}
+
+.chevron-droit{
+  width: 14px;
+  height: 14px;
+  margin-right: 1%;
+}
+
+.chevron-gauche{
+  width: 14px;
+  height: 14px;
+  margin-right: 1%;
+}
+
+#info-accueil{
+  display: flex;
+  align-items: center;
+}
+
+#info-accueil p{
+  color: #B6A886;
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+#home{
+  width: 10%;
+  height: 10%;
+  margin-right: 2%;
+}
+
+#acces-rapide{
+  color: #B6A886;
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+#info-offre-billeterie-contacter p{
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+#info-offre-billeterie{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#info-contacter{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#information-contact{
+  color: #B6A886;
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+#info-tel-email-lieu p{
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.content-chevron-droit{
+  display: flex;
+  justify-content: center;
+}
+
+#info-tel{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#tel{
+  text-decoration: none;
+  color: #1B3168;
+}
+
+#info-email{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#email{
+  text-decoration: none;
+  color: #1B3168;
+}
+
+#info-lieu{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#lieu{
+  text-decoration: none;
+  color: #1B3168    ;
+}
+
+#nos-partenaires{
+  color: #B6A886;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+#rectangle{
+  display: grid;
+  height: 230px;
+  background: rgba(27, 49, 104, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+#content-img-rectangle{
+  height: 170px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#slider-gauche{
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-img-partenaire{
+  width: 80%;
+  transition: all 1s ease-in-out;
+}
+
+.rectangle-img{
+  width: 100%;
+  height: 100%;
+}
+
+#chevron-gauche-slider{
+  width: 90%;
+}
+
+#content-img-partenaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider-droit{
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot{
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#chevron-droit-slider{
+  width: 90%;
+}
+
+#all-partenaire{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#all-partenaire p{
+  width: 215px;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+#all-partenaire p a{
+  color: black;
+}
+
+#font-bleu{
+  background-color: #1B3168;
+  height: 50%;
+  display: flex;
+  position: relative;
+  top: 50%;
+}
+
+nav{
+  display: flex;
+  position: relative;
+  margin-left: calc(9% + 244px);
+}
+
+li{
+  width: 130px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover{
+  background-color: #B6A886;
+  cursor: pointer;
+  color: #1B3168;
+}
+
+#accueil{
+  background-color: #B6A886;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+
+#element-footer{
+  position: relative;
+}
+
+footer{
+  padding: 20px;
+  background-color: #B6A886;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-footer{
+  width: 90%;
+  display: flex;
+}
+
+#content-footer-img{
+  width: 244px;
+}
+
+#titre-cse-raccourcis{
+  display: grid;
+  margin-left: 4%;
+}
+
+#cse-lsv{
+  margin: 0;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#img-footer{
+  margin-right: 3%;
+}
+
+#raccourcis{
+  height: 35%;
+  display: flex;
+}
+
+#raccourcis a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+}
+
+.chevron-blanc{
+  display: grid;
+  margin-right: 5px;
+}
+
+.trait-blanc-incline30deg{
+  border: 0.7px solid white;
+  padding-right: 10px;
+  background-color: white;
+  transform: rotate(25deg);
+  margin-top: 3px;
+}
+
+.trait-blanc-incline-30deg{
+  border: 0.7px solid white;
+  padding-right: 10px;
+  background-color: white;
+  transform: rotate(-25deg);
+  margin-top: 3px;
+}
+
+.chevron-blanc-raccourcis{
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.chevron-blanc-raccourcis:last-child{
+  margin: 0;
+}
+
+@media(max-width:840px){
+  nav{
+      display: none;
+  }
+
+  #font-logo{
+      margin: 0;
+  }
+
+  #font-bleu{
+      display: grid;
+      justify-content: end;
+  }
+
+  li{
+      width: 180px;
+      height: 75%;
+  }
+
+  li a{
+      color: white;
+      font-size: 20px;
+  }
+
+  #menu-hamburger{
+      display: grid;
+      justify-content: center;
+      width: 100%;
+      cursor: pointer;
+  }
+
+  .trait{
+      margin: 5px;
+      padding-right: 50px;
+      background-color: #EFEDED;
+      border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #font-logo{
+      width: 240px;
+  }
+
+  #info-accueil p{
+      font-size: 15px;
+  }
+
+  #acces-rapide{
+      font-size: 15px;
+  }
+
+  #info-offre-billeterie-contacter p{
+      font-size: 10px;
+  }
+
+  #information-contact{
+      font-size: 15px;
+  }
+
+  #info-tel-email-lieu p{
+      font-size: 10px;
+  }
+
+  #nos-partenaires{
+      font-size: 15px;
+  }
+
+  .chevron-droit{
+      width: 10px;
+      height: 10px;
+  }
+
+  .container-logo{
+      width: 200px;
+  }
+
+  #rectangle{
+      height: 210px;
+  }
+
+  #all-partenaire p{
+      font-size: 12px;
+  }
+
+  #content-footer-img{
+      width: 220px;
+  }
+
+  #titre-cse-raccourcis{
+      margin-left: 0;
+  }
+
+  #cse-lsv{
+      font-size: 20px;
+  }
+  
+  #raccourcis p{
+      font-size: 15px;
+  }
+}
+
+@media screen  and (max-width: 670px) {
+  #content-footer{
+      width: 100%;
+      display: grid;
+      justify-content: center;
+  }
+
+  #content-footer-img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+
+  .img-lsv {
+      width: 85%;
+  }
+
+  #titre-cse{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+}
+
+@media screen  and (max-width: 360px) {
+  #raccourcis p{
+      font-size: 10px;
+  }
+}
+
+@media screen  and (max-width: 270px) {
+  #raccourcis{
+      display: grid;
+  }
+
+  #raccourcis p{
+      font-size: 15px;
+  }
+}
+
+#container-offre{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50vh;
+}
+
+.rectangle_1 {
+    position: absolute;
+    width: 242px;
+    height: 230px;
+    left: 0px;
+    top: 530px;
+    background: rgba(27, 49, 104, 0.1);
+}
+
+.rectangle_7 {
+    width: 865px;
+    height: 143px;
+    background: #D9D9D9;
+}
+
+.chevron_7 {
+    position: absolute;
+    width: 33px;
+    height: 31px;
+    left: -48px;
+    top: 49px;
+    cursor: pointer;
+}
+
+.chevron_8 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: 166px;
+    top: 49px;
+    cursor: pointer;
+}
+
+.leonidas {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    left: 33px;
+    top: 25px;
+
+    background: url(images/Leonidas.png);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.point_1 {
+    width: 8px;
+    height: 8px;
+    top: 162px;
+    left: 54px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.point_2 {
+    width: 8px;
+    height: 8px;
+    top: 162px;
+    left: 67px;
+    background: #C4C4C4;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.point_3 {
+    width: 8px;
+    height: 8px;
+    top: 162px;
+    left: 80px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.decouverte {
+    position: absolute;
+    width: 215px;
+    height: 17px;
+    left: 25px;
+    top: 235px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+}
+
+.fond_logo_2 {
+    position: absolute;
+    width: 244px;
+    height: 111px;
+    left: 134px;
+    top: 17px;
+    background: #FFFFFF;
+}
+
+.lsv_1 {
+    position: absolute;
+    width: 204px;
+    height: 89px;
+    left: 8px;
+    top: -12px;
+}
+
+.cse {
+    position: absolute;
+    width: 248px;
+    height: 24px;
+    left: 425px;
+    top: 17px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.partenaire {
+    position: absolute;
+    width: 139px;
+    height: 24px;
+    left: 423px;
+    top: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.bille {
+    position: absolute;
+    width: 113px;
+    height: 24px;
+    left: 607px;
+    top: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.contac {
+    position: absolute;
+    width: 97px;
+    height: 24px;
+    left: 765px;
+    top: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+}
+
+.cse_paragraphe {
+    position: relative;
+    width: 417px;
+    height: 30.97px;
+    left: 16px;
+    top: 10px;
+
+    font-family: 'Inter' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1B3168;
+
+}
+
+.cse_contenu {
+    position: relative;
+    width: 832px;
+    height: 51.92px;
+    left: 16px;
+    top: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+
+}
+
+.der_offres {
+    width: 538px;
+    height: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.rectangle_8 {
+    width: 865px;
+    height: 199px;
+    background: #EFEDED;
+}
+
+.rectangle_9 {
+    width: 865px;
+    height: 199px;
+    background: #EFEDED;
+}
+
+.rectangle_10 {
+    width: 865px;
+    height: 199px;
+    background: #EFEDED;
+}
+
+.petit_rectangle {
+    position: relative;
+    width: 146px;
+    height: 22px;
+    left: 13px;
+    top: 16px;
+    background: #1B3168;
+    border-radius: 7px;
+}
+
+.surli {
+    text-decoration-line: underline;
+}
+
+.offre_rectangle {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    top: 5px;
+    line-height: 12px;
+    font-size: 10px;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.public {
+    position: relative;
+    width: 408px;
+    height: 17px;
+    left: 166px;
+    top: -5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.texte1 {
+    position: relative;
+    width: 745px;
+    height: 87px;
+    left: 20px;
+    top: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.savoir {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.d {
+    width: 14.11px;
+    height: 14px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    body {
+      margin-right: 0;
+    }
+  
+    .fond_gris {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .fond_logo {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      margin: 1.25rem 0;
+    }
+  
+    .fond_bleu {
+      width: 100%;
+    }
+  
+    .accueil {
+      width: 100%;
+      left: 0;
+    }
+  
+    .partenariats {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  
+    .billetterie {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  
+    .contact {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  
+    .home {
+      position: relative;
+      width: 1.375rem;
+      height: 1.375rem;
+      top: 0;
+      left: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron {
+      position: relative;
+      width: 0.875rem;
+      height: 0.875rem;
+      left: 0.938rem;
+      top: 0.75rem;
+    }
+  
+    .accueil_1 {
+      position: relative;
+      width: 73px;
+      height: 14px;
+      left: 51px;
+      top: 0;
+      margin-top: 1.5rem;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .acces {
+      position: relative;
+      width: 127px;
+      height: 24px;
+      left: 11px;
+      top: 0;
+      margin-top: 1.5rem;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .chevron_2 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -13px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_3 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -53px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_4 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -13px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_5 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -53px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_6 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -13px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_7 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -53px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_8 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -13px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_9 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -53px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_10 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -13px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  
+    .chevron_11 {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      left: -53px;
+      top: 0;
+      margin-top: 1.5rem;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .rectangle_7 {
+      width: 40%; 
+      height: 50px; 
+    }
+  
+    .rectangle_8 {
+      width: 40%; 
+      height: 50px; 
+    }
+  
+    .rectangle_9 {
+      width: 40%; 
+      height: 50px; 
+    }
+  
+    .rectangle_10 {
+      width: 40%;  
+      height: 50px; 
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .navbar-menu {
+      display: none; /* Cacher le menu par défaut */
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  
+    .navbar-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+    .toggle-icon {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      margin-bottom: 6px;
+    }
+  
+    .fond_gris {
+      display: none; /* Cacher la section fond_gris */
+    }
+  } 
+
+  @media (max-width: 480px) {
+    .hide-responsive {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rectangle:nth-child(n+7) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rectangle7 {
+      margin-bottom: 20px;
+    }
+  
+    .text-between {
+      order: 6;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    .accueil_1 {
+      font-size: 20px;
+    }
+    
+    .acces {
+      font-size: 20px;
+    }
+  }
+
