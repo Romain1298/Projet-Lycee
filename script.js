@@ -36,7 +36,6 @@ function showMenuHamburger(){
     const buttonHamburger = document.getElementById("menu-hamburger")
 
     buttonHamburger.addEventListener('click', () => {
-        menuHamburger.style.display ='flex';
         menuHamburger.style.right ='0';
         menuHamburger.style.paddingLeft = '60%';
     })
@@ -47,7 +46,6 @@ function hideHamburger(){
     const hide = document.getElementById("hide-menu-deroulant")
 
     hide.addEventListener('click', () => {
-        menuHamburger.style.display = 'none';
         menuHamburger.style.paddingLeft = '0';
         menuHamburger.style.right ='-60%';
     })
