@@ -305,7 +305,7 @@ $erreur = [];
                 </div>
             </div>
         </footer>
-        <script src="../script.js"></script>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
