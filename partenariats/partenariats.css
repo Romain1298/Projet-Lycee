@@ -505,18 +505,17 @@ footer{
 }
 
 .page_partenaire{
-    width: 39%;
+    width: 45%;
+    padding: 10px;
     background-color: #EFEDED;
     display: grid;
     grid-template-columns: repeat(3, 170px);
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .partenaire{
-    /* border: solid; */
-    align-items: center;
-    width: 88%;
-    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nom_partenaire{

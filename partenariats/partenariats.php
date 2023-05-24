@@ -211,4 +211,3 @@ if(empty($_GET['id_part'])===false){
     </script>
 </body>
 </html>
-
