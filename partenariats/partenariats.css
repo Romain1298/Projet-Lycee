@@ -523,6 +523,7 @@ footer{
     border: solid;
     border-radius: 7px;
     background-color: #1B3168;
+    margin-bottom: 20px;
 }
 
 .nom_part{
@@ -531,6 +532,7 @@ footer{
     font-family: 'Montserrat';
     font-size: 15px;
     font-weight: 500;
+    color: #B6A886;
 }
 
 .image_partenaire{

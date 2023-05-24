@@ -10,8 +10,8 @@ if(empty($_GET['id_part'])===false){
     <div class="popup open-popup" id="popup">
         <h5><?= $partenariats['partenaire_nom']?></h5>
         <img src="Leonidas.png">
-        <p><?= $partenariats['partenaire_texte']?></p>
-        <p><?= $partenariats['partenaire_lien']?></h5><br>
+        <p><?= $partenariats['texte_partenaire']?></p>
+        <p><?= $partenariats['lien_partenaire']?></h5><br>
         <a href="partenariats.php"><button type="button" onclick="closePopup()">OK</button></a>
     </div>
     <?php
